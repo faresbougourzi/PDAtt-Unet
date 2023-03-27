@@ -23,7 +23,7 @@ regression models are trained using the same fixed hyper-parameters, the resulti
 ensemble regression yields the best accurate estimates compared to the individual
 models and to the state-of-the-art solutions.
 
-# Citation: If you found this  this Repository useful, please cite:
+## Citation: If you found this  this Repository useful, please cite:
 
 ```bash
 @article{bougourzi2023pdatt,
