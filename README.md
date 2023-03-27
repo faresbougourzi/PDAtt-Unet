@@ -23,6 +23,11 @@ regression models are trained using the same fixed hyper-parameters, the resulti
 ensemble regression yields the best accurate estimates compared to the individual
 models and to the state-of-the-art solutions.
 
+![CDAttUnet (1)]![1-s2 0-S1361841523000580-gr3](https://user-images.githubusercontent.com/18519110/228052439-693624f2-8abe-4fa4-b5fb-903c9d37b7f2.jpg)
+<p align="center">
+  Figure 1: Our proposed DAtt-Unet architecture details.
+</p>  
+
 ## Citation: If you found this  this Repository useful, please cite:
 
 ```bash
@@ -39,11 +44,11 @@ models and to the state-of-the-art solutions.
 
 ![PAttUnet (1)](https://user-images.githubusercontent.com/18519110/164985902-fbf77196-e435-40ec-aa89-bdeb1cdfc093.png)
 <p align="center">
-  Figure 1: Our proposed PAtt-Unet architecture details.
+  Figure 2: Our proposed PAtt-Unet architecture details.
 </p>
 
 ![CDAttUnet (1)](https://user-images.githubusercontent.com/18519110/164985900-d1b48555-8a6d-4bb0-86f8-d8ddf7b415df.png)
 <p align="center">
-  Figure 2: Our proposed DAtt-Unet architecture details.
+  Figure 3: Our proposed DAtt-Unet architecture details.
 </p>  
 
