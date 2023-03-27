@@ -23,10 +23,10 @@ regression models are trained using the same fixed hyper-parameters, the resulti
 ensemble regression yields the best accurate estimates compared to the individual
 models and to the state-of-the-art solutions.
 
-![DAttUnet (1)](https://user-images.githubusercontent.com/18519110/228053269-2b9e854e-031b-4db3-b386-ca0acdb3d7a6.png)
+![PDEAttUnet (1)](https://user-images.githubusercontent.com/18519110/228053614-95a1574a-5c8a-45f2-a0d0-f30590474a2f.png)
 
 <p align="center">
-  Figure 1: Our proposed DAtt-Unet architecture details.
+  Figure 1: Our proposed PDEAtt-Unet architecture details.
 </p>  
 
 ## Citation: If you found this  this Repository useful, please cite:
