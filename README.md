@@ -41,6 +41,7 @@ models and to the state-of-the-art solutions.
   publisher={Elsevier}
 }
 ```
+## Ablation architectures: PAttUnet and DAtt-Unet 
 
 
 ![PAttUnet (1)](https://user-images.githubusercontent.com/18519110/164985902-fbf77196-e435-40ec-aa89-bdeb1cdfc093.png)
