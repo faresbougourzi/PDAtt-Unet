@@ -29,7 +29,7 @@ models and to the state-of-the-art solutions.
   Figure 1: Our proposed PDEAtt-Unet architecture details.
 </p>  
 
-## Citation: If you found this  this Repository useful, please cite:
+## Citation: If you found this Repository useful, please cite:
 
 ```bash
 @article{bougourzi2023pdatt,
