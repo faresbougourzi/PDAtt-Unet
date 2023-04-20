@@ -20,10 +20,17 @@ In summary, the main contributions of this paper are as follows:
 </p> 
 
 ## Implementation:
-#### PDAtt-Unet architecture
+#### PDAtt-Unet architecture and Hybrid loss function:
 ``` Architectures.py ``` contains our implementation of the comparison CNN baseline architectures  (Unet, Att-Unet and Unet++) and the proposed PDAtt-Unet. architecture.
+
 ``` Hybrid_loss.py ``` contains the proposed Edge loss function.
 
+#### Training and Testing Implementation:
+``` detailed train and test ``` contains the training and testing implementation.
+
+- First: the dataset should be prepared using ``` prepare_dataset.py ```, this saves the input slices, lung mask, and infection mask as ``` .pt ``` files
+
+- Second:  ``` train_test_PDAttUnet.py ``` can be used to train and test the proposed PDAtt-Unet architecture with the proposed Hybrid loss function (with Edge loss).
 
 
 ## Citation: If you found this Repository useful, please cite:
