@@ -2,26 +2,16 @@
 
 In summary, the main contributions of this paper are as follows:
 
-- We propose ParamSmoothL1 regression loss function. In addition, we introduce a
-dynamic law that changes the parameter of the robust loss function during train-
-ing. To this end, we use the cosine law with the following robust loss functions:
-ParamSmoothL1, Huber and Tukey. This can solve the issue of complexity in
-searching the best loss function parameter.
+- Inspired by the Att-Unet architecture, we propose three different architectures for segmenting Covid-19 infections from CT-scans. The first variant, Pyramid Att-Unet (PAtt-Unet), uses image pyramids to preserve the spatial awareness in all of the encoder layers. Unlike most attention-based segmentation architectures, our proposed PAtt-Unet uses the attention gates not only in the decoder but also in the encoder.
 
-- We propose two branches network (REX-INCEP) for facial beauty estimation based
-on ResneXt-50 and Inception-v3 architectures. The main advantage of our REX-
-INCEP architecture is its ability to learn high-level FBP features using ResneXt and
-Inception blocks simultaneously, which proved its efficiency compared to seven CNN
-architectures. Moreover, our REX-INCEP architecture provides the right tradeoff
-between the performance and the number of parameters for facial beauty prediction.
+- Based on PAtt-Unet and DAtt-Unet, we propose a Pyramid Dual-Decoder Att-Unet (PDAtt-Unet) architecture using the pyramid and attention gates to preserve the global spatial awareness in all of the encoder layers. In the decoding phase, PDAtt-Unet has two independent decoders that use the Attention Gates to segment infection and lung simultaneously.
 
-- We propose ensemble regression for facial beauty estimation by fusing the predicted
-scores of one branch networks (ResneXt-50 and Inception-v3) and two branches
-network (REX-INCEP) which are trained using four loss functions (MSE, dynamic
-ParamSmoothL1, dynamic Huber and dynamic Tukey). Although the individual
-regression models are trained using the same fixed hyper-parameters, the resulting
-ensemble regression yields the best accurate estimates compared to the individual
-models and to the state-of-the-art solutions.
+- To address the shortcomings of the binary cross entropy loss function in distinguishing the infection boundaries and the small infection regions, we propose the ${BCE}_{Edge}$ loss that focuses on the edges of the infection regions.
+
+- To evaluate the performance of our proposed architectures, we use four public datasets with two evaluation scenarios (intra and cross datasets),  all slices from CT scans are used for the training and testing phases. 
+
+- To compare the performance of our approach with other CNN-based segmentation architectures, we use three baseline architectures (Unet, Att-Unet and Unet++) and three state-of-the-art architectures for Covid-19 segmentation (InfNet, SCOATNet, and nCoVSegNet). The experimental results show the superiority of our proposed architecture compared to the basic segmentation architectures as well as to the three state-of-the-art architectures in both intra-database and inter-database evaluation scenarios.
+
 
 ![PDEAttUnet (1)](https://user-images.githubusercontent.com/18519110/228053614-95a1574a-5c8a-45f2-a0d0-f30590474a2f.png)
 
