@@ -19,15 +19,15 @@ In summary, the main contributions of this paper are as follows:
   Figure 1: Our proposed PDEAtt-Unet architecture details.
 </p> 
 
-## Codes:
-
+## Implementation:
+### PDAtt-Unet architecture
 ```bash
-Architectures.py 
+Architectures.py ```
 contains our implementation of the comparison CNN baseline architectures  (Unet, Att-Unet and Unet++) and the proposed PDAtt-Unet architecture.
 Hybrid_loss.py
 contains the proposed Edge loss function
 
-```
+
 
 ## Citation: If you found this Repository useful, please cite:
 
