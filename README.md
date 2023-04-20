@@ -29,6 +29,7 @@ In summary, the main contributions of this paper are as follows:
 ``` detailed train and test ``` contains the training and testing implementation.
 
 - First: the dataset should be prepared using ``` prepare_dataset.py ```, this saves the input slices, lung mask, and infection mask as ``` .pt ``` files
+The datasets could be donwloaded from: http://medicalsegmentation.com/covid19/
 
 - Second:  ``` train_test_PDAttUnet.py ``` can be used to train and test the proposed PDAtt-Unet architecture with the proposed Hybrid loss function (with Edge loss).
 
