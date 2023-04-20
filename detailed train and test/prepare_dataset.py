@@ -11,12 +11,13 @@ import cv2
 import nibabel as nib
 from sklearn.model_selection import train_test_split
 
+# The datasets could be donwloaded from: http://medicalsegmentation.com/covid19/
+
 import re
 def sorted_alphanumeric(data):
     convert = lambda text: int(text) if text.isdigit() else text.lower()
     alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ] 
     return sorted(data, key=alphanum_key)
-
 
 
 database_path = './data/9 CT scans/rp_im'
